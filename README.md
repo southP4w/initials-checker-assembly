@@ -1,1 +1,0 @@
-# initials-checker-assembly
