@@ -3,11 +3,11 @@
 ; *** NOTE: Please run this program on a Linux machine or VM for best results.
 ; The program must be run in the NASM x64 Setting ***
 
-; Programmer-defined functions:
+; Declaring programmer-defined functions:
 global chartobin
 global checkinput
 
-; main function
+; Declaring main function:
 global main
 
 ; Referencing C functions from the C Standard Library and Standard I/O:
