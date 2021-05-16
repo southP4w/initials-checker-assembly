@@ -164,7 +164,7 @@ checkinput:
         .loop_my_little_s:
         cmp     dword [rbp-8], 7
         jle     .print_current_bit_little_s
-        mov     esi, 115
+        mov     esi, 115  ; Move 's' into 32-bit register 'esi'
         mov     edi, arrow_and_char_identifier
         mov     eax, 0
         call    printf
@@ -186,7 +186,7 @@ checkinput:
         .loop_my_big_P:
         cmp     dword [rbp-12], 7
         jle     .print_current_bit_big_P
-        mov     esi, 80
+        mov     esi, 80   ; Move 'P' into 32-bit register 'esi'
         mov     edi, arrow_and_char_identifier
         mov     eax, 0
         call    printf
@@ -212,7 +212,7 @@ checkinput:
         .prompt_user_for_input:
         cmp     dword [rbp-16], 7
         jle     .print_current_bit_little_p
-        mov     esi, 112
+        mov     esi, 112  ; Move 'p' into 32-bit register 'esi'
         mov     edi, arrow_and_char_identifier
         mov     eax, 0
         call    printf
