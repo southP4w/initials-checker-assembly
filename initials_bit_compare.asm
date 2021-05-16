@@ -92,28 +92,28 @@ checkinput:
         mov     qword [rbp-120], rdi
         mov     qword [rbp-128], rsi
         mov     qword [rbp-136], rdx
-        ; Convert 'D' to a binary-string:
+        ; Convert 'S' to a binary-string:
         lea     rax, [rbp-78] ; Load the effective address of [rbp-78] and store it in 'rax',
         mov     rsi, rax      ; then copy it into 'rsi'.
         ; Move 'D' into register 'edi' and call 'chartobin' to convert it to a binary string:
         mov     edi, 83 ; 'S'
         call    chartobin
 
-        ; Convert 'd' to a binary-string:
+        ; Convert 's' to a binary-string:
         lea     rax, [rbp-86] ; Load the effective address of [rbp-86] and store it in 'rax',
         mov     rsi, rax      ; then copy it into 'rsi'.
         ; Move 'd' into register 'edi' and call 'chartobin' to convert it to a binary string:
         mov     edi, 115  ; 's'
         call    chartobin
 
-        ; Convert 'G' to a binary-string:
+        ; Convert 'P' to a binary-string:
         lea     rax, [rbp-94] ; Load the effective address of [rbp-94] and store it in 'rax',
         mov     rsi, rax      ; then copy it into 'rsi'.
         ; Move 'G' into register 'edi' and call 'chartobin' to convert it to a binary string:
         mov     edi, 80 ; 'P'
         call    chartobin
 
-        ; Convert 'g' to a binary-string:
+        ; Convert 'p' to a binary-string:
         lea     rax, [rbp-102]  ; Load the effective address of [rbp-94] and store it in 'rax',
         mov     rsi, rax        ; then copy it into 'rsi'.
         ; Move 'g' into register 'edi' and call 'chartobin' to convert it to a binary string:
